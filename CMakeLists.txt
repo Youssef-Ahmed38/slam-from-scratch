@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.24)
+project(slam_from_scratch LANGUAGES CXX)
+add_library(slam_from_scratch src/slam.cpp)
+target_include_directories(slam_from_scratch PUBLIC include)
+target_compile_features(slam_from_scratch PUBLIC cxx_std_20)
